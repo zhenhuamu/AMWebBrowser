@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
-#import "AMBridgeProtocol.h"
+#import "AMPluginManager.h"
 
 @class AMWebBrowserViewController;
 

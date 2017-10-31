@@ -63,7 +63,7 @@ static NSString * const kMessageBody     = @"messageBody";
 
 - (instancetype)init {
     NSAssert(NO, @"%s should use initWithWebVC instantiation", __func__);
-    return [self initWithWebVC:nil];
+    return [self initWithWebVC:[AMWebBrowserViewController new]];
 }
 
 

@@ -42,7 +42,6 @@
 		52312FC11FA8158800763C37 /* AMWebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMWebBrowserViewController.m; sourceTree = "<group>"; };
 		52312FC41FA8158800763C37 /* AMPluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPluginManager.h; sourceTree = "<group>"; };
 		52312FC51FA8158800763C37 /* AMPluginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPluginManager.m; sourceTree = "<group>"; };
-		52312FC91FA824BC00763C37 /* AMBridgeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBridgeProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +131,6 @@
 		52312FC21FA8158800763C37 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				52312FC91FA824BC00763C37 /* AMBridgeProtocol.h */,
 				52312FC41FA8158800763C37 /* AMPluginManager.h */,
 				52312FC51FA8158800763C37 /* AMPluginManager.m */,
 			);

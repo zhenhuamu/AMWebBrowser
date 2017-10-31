@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AMBridgeProtocol.h"
+#import "AMPluginManager.h"
 
 @interface AMSharePlugin : NSObject <AMBridgeProtocol>
 
