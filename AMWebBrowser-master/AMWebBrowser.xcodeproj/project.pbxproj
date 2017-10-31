@@ -17,8 +17,8 @@
 		49A865FB1F4336AD00A45367 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A865F91F4336AD00A45367 /* LaunchScreen.storyboard */; };
 		521629661FA6C3CB00A04264 /* AMRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 521629651FA6C3CB00A04264 /* AMRefreshView.m */; };
 		5216296D1FA6F0E900A04264 /* AMSharePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216296C1FA6F0BF00A04264 /* AMSharePlugin.m */; };
-		52312FBE1FA80C0800763C37 /* AMWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52312FB91FA80BF700763C37 /* AMWebBrowserViewController.m */; };
-		52312FBF1FA80C0800763C37 /* AMPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52312FBD1FA80BF700763C37 /* AMPluginManager.m */; };
+		52312FC61FA815CD00763C37 /* AMWebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52312FC11FA8158800763C37 /* AMWebBrowserViewController.m */; };
+		52312FC71FA815CD00763C37 /* AMPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52312FC51FA8158800763C37 /* AMPluginManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,11 +38,11 @@
 		521629651FA6C3CB00A04264 /* AMRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMRefreshView.m; sourceTree = "<group>"; };
 		5216296B1FA6F0BF00A04264 /* AMSharePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMSharePlugin.h; sourceTree = "<group>"; };
 		5216296C1FA6F0BF00A04264 /* AMSharePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMSharePlugin.m; sourceTree = "<group>"; };
-		52312FB81FA80BF700763C37 /* AMWebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMWebBrowserViewController.h; sourceTree = "<group>"; };
-		52312FB91FA80BF700763C37 /* AMWebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMWebBrowserViewController.m; sourceTree = "<group>"; };
-		52312FBB1FA80BF700763C37 /* AMBridgeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBridgeProtocol.h; sourceTree = "<group>"; };
-		52312FBC1FA80BF700763C37 /* AMPluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPluginManager.h; sourceTree = "<group>"; };
-		52312FBD1FA80BF700763C37 /* AMPluginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPluginManager.m; sourceTree = "<group>"; };
+		52312FC01FA8158700763C37 /* AMWebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMWebBrowserViewController.h; sourceTree = "<group>"; };
+		52312FC11FA8158800763C37 /* AMWebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMWebBrowserViewController.m; sourceTree = "<group>"; };
+		52312FC31FA8158800763C37 /* AMBridgeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMBridgeProtocol.h; sourceTree = "<group>"; };
+		52312FC41FA8158800763C37 /* AMPluginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMPluginManager.h; sourceTree = "<group>"; };
+		52312FC51FA8158800763C37 /* AMPluginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMPluginManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,27 +122,19 @@
 		52312FB61FA80BF700763C37 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				52312FB71FA80BF700763C37 /* AMWebBrowserManager */,
+				52312FC01FA8158700763C37 /* AMWebBrowserViewController.h */,
+				52312FC11FA8158800763C37 /* AMWebBrowserViewController.m */,
+				52312FC21FA8158800763C37 /* Bridge */,
 			);
 			path = Class;
 			sourceTree = SOURCE_ROOT;
 		};
-		52312FB71FA80BF700763C37 /* AMWebBrowserManager */ = {
+		52312FC21FA8158800763C37 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				52312FB81FA80BF700763C37 /* AMWebBrowserViewController.h */,
-				52312FB91FA80BF700763C37 /* AMWebBrowserViewController.m */,
-				52312FBA1FA80BF700763C37 /* Bridge */,
-			);
-			path = AMWebBrowserManager;
-			sourceTree = "<group>";
-		};
-		52312FBA1FA80BF700763C37 /* Bridge */ = {
-			isa = PBXGroup;
-			children = (
-				52312FBB1FA80BF700763C37 /* AMBridgeProtocol.h */,
-				52312FBC1FA80BF700763C37 /* AMPluginManager.h */,
-				52312FBD1FA80BF700763C37 /* AMPluginManager.m */,
+				52312FC31FA8158800763C37 /* AMBridgeProtocol.h */,
+				52312FC41FA8158800763C37 /* AMPluginManager.h */,
+				52312FC51FA8158800763C37 /* AMPluginManager.m */,
 			);
 			path = Bridge;
 			sourceTree = "<group>";
@@ -221,8 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52312FBE1FA80C0800763C37 /* AMWebBrowserViewController.m in Sources */,
-				52312FBF1FA80C0800763C37 /* AMPluginManager.m in Sources */,
+				52312FC61FA815CD00763C37 /* AMWebBrowserViewController.m in Sources */,
+				52312FC71FA815CD00763C37 /* AMPluginManager.m in Sources */,
 				5216296D1FA6F0E900A04264 /* AMSharePlugin.m in Sources */,
 				49A865F31F4336AD00A45367 /* ViewController.m in Sources */,
 				49A865F01F4336AD00A45367 /* AppDelegate.m in Sources */,
@@ -350,7 +342,7 @@
 				DEVELOPMENT_TEAM = UGZJR73Q2H;
 				INFOPLIST_FILE = AMWebBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.AMWebBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -362,7 +354,7 @@
 				DEVELOPMENT_TEAM = UGZJR73Q2H;
 				INFOPLIST_FILE = AMWebBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.AMWebBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
