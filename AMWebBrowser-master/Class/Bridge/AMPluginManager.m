@@ -35,7 +35,6 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <WebKit/WebKit.h>
 #import "AMWebBrowserViewController.h"
-#import "AMSharePlugin.h"
 
 static NSString * const kJSContextPath   = @"documentView.webView.mainFrame.javaScriptContext";
 static NSString * const kMessageHandlers = @"messageHandlers";
