@@ -23,11 +23,26 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+// 注入获取app版本号的js代码
+- (NSString *)getVersionInjectionCode {
+    
+    NSString *injectionCode = @"function goToTest2(name) { window.webkit.messageHandlers.shareInfo.postMessage(name); } function goToTest3(name) { window.webkit.messageHandlers.shareInfo.postMessage(name); }";
+    
+    return injectionCode;
+}
+
 - (IBAction)push:(UIButton *)sender {
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSURL *baseURL = [NSURL fileURLWithPath:path];
     
-    AMWebBrowserViewController * webBrowser = [AMWebBrowserViewController webBrowser];
+    WKUserContentController *userContentController = [[WKUserContentController alloc] init];
+    // 注入获取app版本号的js代码
+    WKUserScript *script = [[WKUserScript alloc] initWithSource:[self getVersionInjectionCode] injectionTime:WKUserScriptInjectionTimeAtDocumentStart forMainFrameOnly:NO];
+    [userContentController addUserScript:script];
+    WKWebViewConfiguration *webViewConfiguration = [[WKWebViewConfiguration alloc] init];
+    webViewConfiguration.userContentController = userContentController;
+    
+    AMWebBrowserViewController * webBrowser = [AMWebBrowserViewController webBrowserWithConfiguration:webViewConfiguration];
     
     //自定义返回按钮 和 后退按钮
     webBrowser.backButtonImage = [UIImage imageNamed:@"nav_btn_back_default"];

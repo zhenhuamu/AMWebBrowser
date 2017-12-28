@@ -168,7 +168,7 @@
 				TargetAttributes = {
 					49A865E71F4336AD00A45367 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = UGZJR73Q2H;
+						DevelopmentTeam = 4FYS54XBTW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -337,11 +337,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UGZJR73Q2H;
+				DEVELOPMENT_TEAM = 4FYS54XBTW;
 				INFOPLIST_FILE = AMWebBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.AMWebBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,11 +350,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UGZJR73Q2H;
+				DEVELOPMENT_TEAM = 4FYS54XBTW;
 				INFOPLIST_FILE = AMWebBrowser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andymu.AMWebBrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
